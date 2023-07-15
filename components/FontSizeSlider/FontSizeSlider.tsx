@@ -52,11 +52,11 @@ const FontSizeSlider = (props: FontSizeSliderProps) => {
   }
 
   return (
-    <Box display="flex" alignItems="center" maxWidth="30rem" flexGrow={1}>
+    <Box display="flex" alignItems="center" height="100%">
       <Tooltip title="Font size">
         <Button
           size="large"
-          sx={{ textTransform: 'none' }}
+          sx={{ marginRight: 1, textTransform: 'none' }}
           onClick={(e) => setAnchorEl(e.currentTarget)}>
           {preview.size}px
         </Button>

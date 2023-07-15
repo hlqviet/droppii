@@ -1,7 +1,7 @@
 'use client'
 
 import { RestartAlt } from '@mui/icons-material'
-import { Box, IconButton, Tooltip } from '@mui/material'
+import { Box, Grid, IconButton, Tooltip } from '@mui/material'
 import { ChangeEventHandler, MouseEventHandler, useState } from 'react'
 
 import FontSizeSlider from '@/components/FontSizeSlider'
@@ -43,24 +43,32 @@ const Toolbar = () => {
   }
 
   return (
-    <Box
-      display="flex"
-      justifyContent="center"
-      alignItems="center"
-      width="100%"
-      position="sticky">
-      <SearchField value={search} onChange={handleSearchChange} />
-      <PreviewTextField preview={preview} setPreview={handlePreviewChange} />
-      <FontSizeSlider preview={preview} setPreview={handlePreviewChange} />
-      <Tooltip title="Reset">
-        <IconButton
-          size="large"
-          disabled={fontPreviewOptions === defaultFontPreviewOptions}
-          onClick={handleResetClick}>
-          <RestartAlt />
-        </IconButton>
-      </Tooltip>
-    </Box>
+    <Grid container spacing={1} position="sticky">
+      <Grid container spacing={1}>
+        <Grid item xs={12} sm={6} md={3}>
+          <SearchField value={search} onChange={handleSearchChange} />
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <PreviewTextField
+            preview={preview}
+            setPreview={handlePreviewChange}
+          />
+        </Grid>
+        <Grid item xs={10} sm={6} md={4}>
+          <FontSizeSlider preview={preview} setPreview={handlePreviewChange} />
+        </Grid>
+        <Grid item xs={2} sm={1} md={1} textAlign="right">
+          <Tooltip title="Reset">
+            <IconButton
+              size="large"
+              disabled={fontPreviewOptions === defaultFontPreviewOptions}
+              onClick={handleResetClick}>
+              <RestartAlt />
+            </IconButton>
+          </Tooltip>
+        </Grid>
+      </Grid>
+    </Grid>
   )
 }
 

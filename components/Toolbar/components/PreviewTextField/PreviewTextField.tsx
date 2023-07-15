@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Menu,
   MenuItem,
@@ -49,11 +50,11 @@ const PreviewTextField = (props: PreviewTextFieldProps) => {
   }
 
   return (
-    <>
+    <Box display="flex" alignItems="center">
       <Tooltip title="Update preview text">
         <Button
           size="large"
-          sx={{ textTransform: 'none' }}
+          sx={{ marginRight: 1, textTransform: 'none' }}
           onClick={(e) => setAnchorEl(e.currentTarget)}>
           {preview.type}
         </Button>
@@ -73,11 +74,11 @@ const PreviewTextField = (props: PreviewTextFieldProps) => {
       </Menu>
       <TextField
         placeholder="Type something"
-        sx={{ minWidth: '20rem' }}
+        fullWidth
         value={preview.text}
         onChange={handleTextChange}
       />
-    </>
+    </Box>
   )
 }
 
