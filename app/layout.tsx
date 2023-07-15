@@ -2,24 +2,23 @@ import './globals.css'
 
 import { CssBaseline } from '@mui/material'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { ReactNode } from 'react'
 
-const inter = Inter({ subsets: ['latin'] })
+import Header from '@/components/Header'
 
 export const metadata: Metadata = {
   title: 'Droppii',
   description: 'Google Font App'
 }
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <CssBaseline enableColorScheme />
-      <body className={inter.className}>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
