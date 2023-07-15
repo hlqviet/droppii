@@ -6,6 +6,7 @@ const SearchField = (props: TextFieldProps) => {
     <TextField
       placeholder="Search fonts"
       InputProps={{ startAdornment: <Search /> }}
+      sx={{ minWidth: '20rem' }}
       {...props}
     />
   )

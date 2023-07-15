@@ -73,6 +73,7 @@ const PreviewTextField = (props: PreviewTextFieldProps) => {
       </Menu>
       <TextField
         placeholder="Type something"
+        sx={{ minWidth: '20rem' }}
         value={preview.text}
         onChange={handleTextChange}
       />

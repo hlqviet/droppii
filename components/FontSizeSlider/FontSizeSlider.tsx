@@ -52,7 +52,7 @@ const FontSizeSlider = (props: FontSizeSliderProps) => {
   }
 
   return (
-    <Box display="flex" alignItems="center" flexGrow={1}>
+    <Box display="flex" alignItems="center" maxWidth="30rem" flexGrow={1}>
       <Tooltip title="Font size">
         <Button
           size="large"
@@ -64,7 +64,7 @@ const FontSizeSlider = (props: FontSizeSliderProps) => {
       <Menu
         open={!!anchorEl}
         anchorEl={anchorEl}
-        sx={{ height: '15rem' }}
+        sx={{ height: '17rem' }}
         onClose={handleMenuClose}>
         {sizeOptions.map((size) => (
           <MenuItem

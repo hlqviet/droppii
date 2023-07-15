@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <Container
       component="main"
+      maxWidth="xl"
       sx={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
       <Toolbar />
     </Container>

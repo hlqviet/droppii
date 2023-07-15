@@ -9,7 +9,7 @@ import PreviewTextField from '@/components/Toolbar/components/PreviewTextField'
 import SearchField from '@/components/Toolbar/components/SearchField'
 import { PreviewTextType } from '@/lib/enums'
 
-const defaultOptions = {
+const defaultFontPreviewOptions = {
   search: '',
   preview: {
     size: 40,
@@ -19,36 +19,43 @@ const defaultOptions = {
 }
 
 const Toolbar = () => {
-  const [toolbarOptions, setToolbarOptions] = useState(defaultOptions)
-  const { search, preview } = toolbarOptions
+  const [fontPreviewOptions, setFontPreviewOptions] = useState(
+    defaultFontPreviewOptions
+  )
+  const { search, preview } = fontPreviewOptions
 
   const handleSearchChange: ChangeEventHandler<HTMLInputElement> = (e) => {
-    setToolbarOptions((prevState) => ({
+    setFontPreviewOptions((prevState) => ({
       ...prevState,
       search: e.target.value
     }))
   }
 
   const handlePreviewChange = (nextPreview: typeof preview) => {
-    setToolbarOptions((prevState) => ({
+    setFontPreviewOptions((prevState) => ({
       ...prevState,
       preview: nextPreview
     }))
   }
 
   const handleResetClick: MouseEventHandler<HTMLButtonElement> = (e) => {
-    setToolbarOptions(defaultOptions)
+    setFontPreviewOptions(defaultFontPreviewOptions)
   }
 
   return (
-    <Box display="flex" alignItems="center" width="100%" position="sticky">
+    <Box
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      width="100%"
+      position="sticky">
       <SearchField value={search} onChange={handleSearchChange} />
       <PreviewTextField preview={preview} setPreview={handlePreviewChange} />
       <FontSizeSlider preview={preview} setPreview={handlePreviewChange} />
       <Tooltip title="Reset">
         <IconButton
           size="large"
-          disabled={toolbarOptions === defaultOptions}
+          disabled={fontPreviewOptions === defaultFontPreviewOptions}
           onClick={handleResetClick}>
           <RestartAlt />
         </IconButton>
