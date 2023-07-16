@@ -7,7 +7,7 @@ type State = {
 }
 
 export const initialState: State = {
-  categories: categories.map(({ name }) => name),
+  categories: categories.map(({ value }) => value),
   subset: '',
   variableOnly: false
 }

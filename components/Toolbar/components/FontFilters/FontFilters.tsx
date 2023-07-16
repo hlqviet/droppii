@@ -74,9 +74,9 @@ const FontFilters = () => {
                 : selected.join(',')
             }
             onChange={handleCategoryChange}>
-            {categoryData.map(({ id, name }) => (
-              <MenuItem key={id} value={name}>
-                <Checkbox checked={categories.includes(name)} />
+            {categoryData.map(({ id, name, value }) => (
+              <MenuItem key={id} value={value}>
+                <Checkbox checked={categories.includes(value)} />
                 <ListItemText primary={name} />
               </MenuItem>
             ))}

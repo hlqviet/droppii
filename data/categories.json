@@ -1,7 +1,7 @@
 [
-  { "id": 1, "name": "Serif" },
-  { "id": 2, "name": "Sans Serif" },
-  { "id": 3, "name": "Display" },
-  { "id": 4, "name": "Handwriting" },
-  { "id": 5, "name": "Monospace" }
+  { "id": 1, "name": "Serif", "value": "serif" },
+  { "id": 2, "name": "Sans Serif", "value": "sans-serif" },
+  { "id": 3, "name": "Display", "value": "display" },
+  { "id": 4, "name": "Handwriting", "value": "handwriting" },
+  { "id": 5, "name": "Monospace", "value": "monospace" }
 ]

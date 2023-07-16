@@ -1,5 +1,6 @@
 import { Container } from '@mui/material'
 
+import FontList from '@/components/FontList'
 import Toolbar from '@/components/Toolbar'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
       component="main"
       sx={{ paddingTop: '1rem', paddingBottom: '1rem' }}>
       <Toolbar />
+      <FontList />
     </Container>
   )
 }
