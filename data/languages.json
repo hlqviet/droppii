@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "name": "Arabic",
+    "subset": "arabic"
+  },
+  {
+    "id": 2,
+    "name": "Bengali",
+    "subset": "bengali"
+  },
+  {
+    "id": 3,
+    "name": "Chinese (Hong Kong)",
+    "subset": "chinese-hongkong"
+  },
+  {
+    "id": 4,
+    "name": "Chinese (Simplified)",
+    "subset": "chinese-simplified"
+  },
+  {
+    "id": 5,
+    "name": "Chinese (Traditional)",
+    "subset": "chinese-traditional"
+  },
+  {
+    "id": 6,
+    "name": "Cyrillic",
+    "subset": "cyrillic"
+  },
+  {
+    "id": 7,
+    "name": "Cyrillic Extended",
+    "subset": "cyrillic-ext"
+  },
+  {
+    "id": 8,
+    "name": "Devanagari",
+    "subset": "devanagari"
+  },
+  {
+    "id": 9,
+    "name": "Greek",
+    "subset": "greek"
+  },
+  {
+    "id": 10,
+    "name": "Greek Extended",
+    "subset": "greek-ext"
+  },
+  {
+    "id": 11,
+    "name": "Gujarati",
+    "subset": "gujarati"
+  },
+  {
+    "id": 12,
+    "name": "Gurmukhi",
+    "subset": "gurmukhi"
+  },
+  {
+    "id": 13,
+    "name": "Hebrew",
+    "subset": "hebrew"
+  },
+  {
+    "id": 14,
+    "name": "Japanese",
+    "subset": "japanese"
+  },
+  {
+    "id": 15,
+    "name": "Kannada",
+    "subset": "kannada"
+  },
+  {
+    "id": 16,
+    "name": "Khmer",
+    "subset": "khmer"
+  },
+  {
+    "id": 17,
+    "name": "Korean",
+    "subset": "korean"
+  },
+  {
+    "id": 18,
+    "name": "Latin",
+    "subset": "latin"
+  },
+  {
+    "id": 19,
+    "name": "Latin Extended",
+    "subset": "latin-ext"
+  },
+  {
+    "id": 20,
+    "name": "Malayalam",
+    "subset": "malayalam"
+  },
+  {
+    "id": 21,
+    "name": "Myanmar",
+    "subset": "myanmar"
+  },
+  {
+    "id": 22,
+    "name": "Oriya",
+    "subset": "oriya"
+  },
+  {
+    "id": 23,
+    "name": "Sinhala",
+    "subset": "sinhala"
+  },
+  {
+    "id": 24,
+    "name": "Tamil",
+    "subset": "tamil"
+  },
+  {
+    "id": 25,
+    "name": "Telugu",
+    "subset": "telugu"
+  },
+  {
+    "id": 26,
+    "name": "Thai",
+    "subset": "thai"
+  },
+  {
+    "id": 27,
+    "name": "Tibetan",
+    "subset": "tibetan"
+  },
+  {
+    "id": 28,
+    "name": "Vietnamese",
+    "subset": "vietnamese"
+  }
+]
