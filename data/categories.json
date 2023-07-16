@@ -1,7 +1,7 @@
 [
   { "id": 1, "name": "Serif" },
-  { "id": 1, "name": "Sans Serif" },
-  { "id": 1, "name": "Display" },
-  { "id": 1, "name": "Handwriting" },
-  { "id": 1, "name": "Monospace" }
+  { "id": 2, "name": "Sans Serif" },
+  { "id": 3, "name": "Display" },
+  { "id": 4, "name": "Handwriting" },
+  { "id": 5, "name": "Monospace" }
 ]

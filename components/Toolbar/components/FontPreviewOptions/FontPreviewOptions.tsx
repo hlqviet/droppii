@@ -7,10 +7,10 @@ import { ChangeEventHandler } from 'react'
 import FontSizeSlider from '@/components/FontSizeSlider'
 import PreviewTextField from '@/components/Toolbar/components/PreviewTextField'
 import SearchField from '@/components/Toolbar/components/SearchField'
-import { useBoundStore } from '@/store/useBoundStore'
+import { useStore } from '@/store/useStore'
 
 const FontPreviewOptions = () => {
-  const { query, preview, setQuery, setPreview, reset } = useBoundStore()
+  const { query, preview, setQuery, setPreview, reset } = useStore()
 
   const handleSearchChange: ChangeEventHandler<HTMLInputElement> = (e) => {
     setQuery(e.target.value)

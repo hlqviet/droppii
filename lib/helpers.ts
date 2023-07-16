@@ -1,17 +1,13 @@
-export const createQueryString = (props: {
-  name: string
-  value: string
-  searchParams: string
+import { API_ROOT, GOOGLE_API_KEY } from '@/lib/constants'
+import { Font } from '@/lib/models'
+
+export const getFonts = async (options?: {
+  subset?: string
+  capability?: string
 }) => {
-  const { name, value, searchParams } = props
+  const params = options ? new URLSearchParams(options).toString() : ''
+  const response = await fetch(`${API_ROOT}?key=${GOOGLE_API_KEY}${params}`)
+  const data = await response.json()
 
-  const params = new URLSearchParams(searchParams)
-
-  if (!value) {
-    params.delete(name)
-  } else {
-    params.set(name, value)
-  }
-
-  return params.toString()
+  return data.items as Font[]
 }

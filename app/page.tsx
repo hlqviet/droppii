@@ -2,7 +2,7 @@ import { Container } from '@mui/material'
 
 import Toolbar from '@/components/Toolbar'
 
-export default function Home() {
+const Home = () => {
   return (
     <Container
       component="main"
@@ -11,3 +11,5 @@ export default function Home() {
     </Container>
   )
 }
+
+export default Home
