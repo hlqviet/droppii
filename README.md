@@ -32,3 +32,24 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Notes
+
+- This is an unfinished assignment
+- Although the assignment is incomplete, I would like to list solutions for what I wasn't able to do:
+  - Font details page: Use Next.js App Router
+  - Sidebar: Save all the selected styles to the global store, which I created with `zustand`
+  - Fitlers in URL params: Create another slice for URL params and rework the filters, queries can then be executed when the URL params change
+  - Improve list performance: Use a solution to render only the on-screen components, `react-window` for example
+- The only problem I didn't find a solution for is how to load the fonts on-the-fly so they can be previewed
+- Tools I chose:
+  - Next.js so I don't need to bother setting up routing, bundler, development environment and deployment
+  - Zustand for global store
+  - Jest and Testing Library for unit testing
+  - Material-UI
+  - ESList and Prettier with Standard style guide
+  - husky and lint-staged
+- Types of implemented unit tests:
+  - `components/FontList/__tests__/FontList.test.tsx` - Component without user actions
+  - `components/Toolbar/components/CategoryFilter/__tests__/CategoryFilter.test.tsx` - Component with user actions
+  - `hooks/useGetFontsQuery/__tests__/useGetFontsQuery.test.ts` - React Hook
