@@ -16,9 +16,10 @@ import useGetFontsQuery from '@/hooks/useGetFontsQuery/useGetFontsQuery'
 import { useStore } from '@/store/useStore'
 
 const FontList = () => {
-  const { query, preview, categories, subset } = useStore()
+  const { query, preview, categories, subset, variableOnly } = useStore()
   const { loading, fonts, error } = useGetFontsQuery({
     options: {
+      capability: variableOnly ? 'VF' : undefined,
       subset
     }
   })
