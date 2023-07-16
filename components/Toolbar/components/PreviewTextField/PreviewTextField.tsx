@@ -34,19 +34,28 @@ const PreviewTextField = (props: PreviewTextFieldProps) => {
     setAnchorEl(null)
   }
 
-  const handleTypeClick: MouseEventHandler<HTMLLIElement> = (e) => {
+  const handleTypeClick: MouseEventHandler<HTMLLIElement> = (event) => {
+    const {
+      currentTarget: { innerText }
+    } = event
+    const type = innerText as PreviewTextType
+
     setPreview({
       ...preview,
-      type: e.currentTarget.innerText as PreviewTextType
+      text: '',
+      type
     })
+
     handleMenuClose()
   }
 
-  const handleTextChange: ChangeEventHandler<HTMLInputElement> = (e) => {
+  const handleTextChange: ChangeEventHandler<HTMLInputElement> = (event) => {
     setPreview({
       ...preview,
-      text: e.target.value,
-      type: !!e.target.value ? PreviewTextType.Custom : PreviewTextType.Sentence
+      text: event.target.value,
+      type: !!event.target.value
+        ? PreviewTextType.Custom
+        : PreviewTextType.Sentence
     })
   }
 
