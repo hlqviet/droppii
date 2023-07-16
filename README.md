@@ -49,6 +49,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
   - Material-UI
   - ESList and Prettier with Standard style guide
   - husky and lint-staged
+  - Vercel for deployment
 - Types of implemented unit tests:
   - `components/FontList/__tests__/FontList.test.tsx` - Component without user actions
   - `components/Toolbar/components/CategoryFilter/__tests__/CategoryFilter.test.tsx` - Component with user actions
