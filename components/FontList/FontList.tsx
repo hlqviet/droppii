@@ -51,13 +51,13 @@ const FontList = () => {
               <Typography
                 variant="body1"
                 sx={{ fontFamily: family, fontSize: preview.size }}>
-                Whereas recognition of the inherent dignity
+                {preview.text || 'Whereas recognition of the inherent dignity'}
               </Typography>
             </CardContent>
           </Card>
         </Grid>
       ))
-  }, [categories, fonts, preview.size, query])
+  }, [categories, fonts, preview.size, preview.text, query])
 
   if (error)
     return (
