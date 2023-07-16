@@ -1,3 +1,4 @@
+import { ArrowDropDown } from '@mui/icons-material'
 import {
   Box,
   Button,
@@ -56,7 +57,7 @@ const PreviewTextField = (props: PreviewTextFieldProps) => {
           size="large"
           sx={{ marginRight: 1, textTransform: 'none' }}
           onClick={(e) => setAnchorEl(e.currentTarget)}>
-          {preview.type}
+          {preview.type} <ArrowDropDown />
         </Button>
       </Tooltip>
       <Menu open={!!anchorEl} anchorEl={anchorEl} onClose={handleMenuClose}>

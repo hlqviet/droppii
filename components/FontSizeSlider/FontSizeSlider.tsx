@@ -1,3 +1,4 @@
+import { ArrowDropDown } from '@mui/icons-material'
 import {
   Box,
   Button,
@@ -58,7 +59,7 @@ const FontSizeSlider = (props: FontSizeSliderProps) => {
           size="large"
           sx={{ marginRight: 1, textTransform: 'none' }}
           onClick={(e) => setAnchorEl(e.currentTarget)}>
-          {preview.size}px
+          {preview.size}px <ArrowDropDown />
         </Button>
       </Tooltip>
       <Menu
