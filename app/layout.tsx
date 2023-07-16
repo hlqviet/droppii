@@ -1,5 +1,3 @@
-import './globals.css'
-
 import { CssBaseline } from '@mui/material'
 import type { Metadata } from 'next'
 import { ReactNode } from 'react'
