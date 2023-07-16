@@ -12,7 +12,7 @@ import {
 import Head from 'next/head'
 import { useMemo } from 'react'
 
-import useGetFontsQuery from '@/hooks/useGetFontsQuery/useGetFontsQuery'
+import useGetFontsQuery from '@/hooks/useGetFontsQuery'
 import { useStore } from '@/store/useStore'
 
 const FontList = () => {
